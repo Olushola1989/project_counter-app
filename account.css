@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.form-container{
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 350px;
+  background-color: white;
+  margin: 50px auto;
+  padding: 30px 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form button{
+  display: block;
+  width: 108%;
+  padding: 10px;
+  border-radius:20px;
+  border: none;
+  background: orangered;
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.form-btn span{
+  width: 100px;
+  margin: 10px;
+  font-weight: 500;
+}
+.form-btn{
+  text-align: center;
+  font-size: 24px;
+}
+form{
+  position: absolute;
+  top: 80px;
+  width: 80%;
+  margin: 20px 20px;
+  transition: transform 1s;
+}
+#Register{
+  left: 0px;
+}
+#Login{
+  left:-300px;
+}
+input{
+  width:100%;
+  margin-bottom: 20px;
+  padding: 8px 8px;
+  border-radius: 5px;
+  border: 2px solid grey;
+  font-size: 16px;
+}
+input:focus{
+  outline: none;
+}
+hr{
+  width: 100px;
+  height: 1px;
+  background-color: red;
+  transform: translateX(130px);
+  margin: 10px;
+  transition: transform 1s;
+}
+form a{
+  text-decoration: none;
+  color: black;
+  display:block;
+  text-align: center;
+}

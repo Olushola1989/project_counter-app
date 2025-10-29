@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Account Page</title>
+  <link rel="stylesheet" href="account.css">
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-btn">
+      <span onclick = "loginBtn()">Login</span>
+      <span onclick = "regBtn()">Register</span>
+      <hr id="indicator">
+    </div>
+    <form id="Login">
+      <input type="text" placeholder="username">
+      <input type="text" placeholder="password">
+      <button>Login</button>
+      <a href="#">forgot password</a>
+    </form>
+     <form id="Register">
+      <input type="text" placeholder="username">
+      <input type="email" placeholder="email">
+      <input type="password" placeholder="password">
+      <button>Register</button>
+    </form>
+  </div>
+  <script>
+    let Register = document.getElementById('Register');
+    let Login = document.getElementById('Login');
+    let indicator = document.getElementById('indicator');  
+    function regBtn(){
+      Register.style.transform = 'translateX(0px)';
+      Login.style.transform = 'translateX(0px)';
+      indicator.style.transform = 'translateX(130px)';
+    }
+    function loginBtn(){
+      Register.style.transform = 'translateX(300px)';
+      Login.style.transform = 'translateX(300px)';
+      indicator.style.transform = 'translateX(30px)';
+      
+    }
+  </script>
+</body>
+</html>
